@@ -1,4 +1,4 @@
-package hello;
+package com.orderhistoryservice;
 
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
@@ -9,7 +9,7 @@ public class OrderHistoryController {
 
     @RequestMapping(value = "/orderhistory", method = RequestMethod.GET, produces = "application/json")
     public String orderhistory() {
-        return "orderhistory";
+        return "{\"body\" = \"orderhistory\"}";
     }
 
 }
